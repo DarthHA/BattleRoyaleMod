@@ -1,0 +1,5 @@
+displayName = [1.4.4]Super Smash Mod 电子斗蛐蛐 
+author = Volknet_Online（网络核心)
+version = 0.7
+homepage = https://space.bilibili.com/442236013
+includeSource = true

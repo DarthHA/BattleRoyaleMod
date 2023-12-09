@@ -1,0 +1,289 @@
+Mods: {
+	BattleRoyaleMod: {
+		Items: {
+			TechniLens: {
+				DisplayName: Tech Lens
+				Tooltip:
+					'''
+					Show enemy team status when carrying
+					Enable enemy team tag under them when set as favorite
+					'''
+			}
+
+			Starter: {
+				DisplayName: Battle Switcher
+				Tooltip:
+					'''
+					Start or end the battle
+					You must have two teams to start a battle
+					'''
+			}
+
+			Marker: {
+				DisplayName: Enemy Marker
+				Tooltip:
+					'''
+					Left click to mark the enemies to join one team
+					Right click to switch the current team
+					Cannot mark the friendly NPCs
+					[c/ff0000:Mark any NPCs as you like when set as favorite, and Use with Caution]
+					'''
+			}
+
+			ClearMark: {
+				DisplayName: Mark Cleaner
+				Tooltip:
+					'''
+					Left click to clear the marks of the enemies
+					Right click to clear all the marks
+					'''
+			}
+
+			Watcher: {
+				DisplayName: Enemy Watcher
+				Tooltip:
+					'''
+					Left click to follow the emeny's perspective
+					Right click to cancel
+					'''
+			}
+
+			Execute: {
+				DisplayName: Enemy Butcher
+				Tooltip:
+					'''
+					Left click to deal the damage of 33% of the max health to enemies
+					Right click to kill the enemies instantly
+					'''
+			}
+
+			ExecuteAll: {
+				DisplayName: Slay All
+				Tooltip:
+					'''
+					Left click to clear all the marked enemies
+					Right click to clear all the projectiles the mark enemies shot
+					'''
+			}
+
+			Teleporter: {
+				DisplayName: Enemy Teleporter
+				Tooltip:
+					'''
+					Left click to teleport enemies of a team to cursor's location
+					Right click to switch the current team
+					Teleport all marked enemies when set as favorite
+					'''
+			}
+
+			RagTime: {
+				DisplayName: Za Warudo
+				Tooltip:
+					'''
+					Left click to freeze or unfreeze the marked enemies
+					Right click to freeze all enemies and projectiles when set as favorite
+					'''
+			}
+
+			ArenaRuler: {
+				DisplayName: Arena Editor
+				Tooltip:
+					'''
+					Enable the Border System in Global Config to make this usable
+					Show border lines when set as favorite
+					Left click to edit the border positions
+					Right click to reset the border
+					[c/ff0000:Too small a border may cause NPCs to behave abnormally, and Use with Caution]
+					'''
+			}
+		}
+
+		OpeningRemind: "[Super Smash Mod] Remember to check Config for more details!"
+		AllMarksClear: All Marks Cleared!
+		MarksClear: Marks Cleared!
+		Bonk: Bonk!
+		InstKill: Executed!
+		SwitchToTeam: Switched to Team {0}
+		NoTeamAvailable: No Available Team Now
+		BattleStart: Battle Start!
+		BattleEnd: Battle End!
+		BattleStatusOn: "[c/d66fd1:Battle is going]"
+		BattleStatusOff: "[c/d66fd1:Battle is stopped]"
+		JoinTheTeam: " has joined Team {0}!"
+		EnemyList: Battle Enemy Status:
+		Team: "[c/00ffff:Team {0}:]"
+		TeamDefeated: Team {0} was defeated!
+		TeamWin: Team {0} won!
+		ZaWarudo: Za Warudo!
+		ZaWarudoResume: Time begins to flow!
+		Projectiles.MultipleSelectProj.DisplayName: MultiSelect
+		NormalHeader: Normal functions
+		WarningHeader: Note: Advanced functions below will not guaranteed to work on all NPCs.
+
+		Configs: {
+			CustomConfig: {
+				DisplayName: Global Config
+
+				MeleeDamageModifier: {
+					Label: Melee damage multiplier dealt during the Super Smash
+					Tooltip: ""
+				}
+
+				ProjDamageModifier: {
+					Label: Projectile damage multiplier dealt during the Super Smash
+					Tooltip: ""
+				}
+
+				AllSegmentUseSameImmune: {
+					Label: All Segments of enemies share the same immunity frame
+					Tooltip: Worm Saver
+				}
+
+				SourceNPCAggro: {
+					Label: Extra Aggro for main target
+					Tooltip:
+						'''
+						Makes it easier for enemy to attack main target, like Skeletron Head
+						Each unit of aggro is equivalent to one pixel of distance
+						'''
+				}
+
+				EnableProjShow: {
+					Label: Enable enemy projectiles team tag
+					Tooltip: ""
+				}
+
+				UseBorderSystem: {
+					Label: Use Border System
+					Tooltip:
+						'''
+						Prevent enemies in Super Smash from escaping the world
+						Use it with caution
+						'''
+				}
+
+				TakeEffectInstantly: {
+					Label: Changes Take Effect Instantly
+					Tooltip:
+						'''
+						The changes below will take effect once the NPC is spawned instantly
+						So you don't need to mark them first
+						'''
+				}
+
+				SpecialBehavior: {
+					Label: Special Behavior Simulation
+					Tooltip: ""
+				}
+
+				subConfigForStat: {
+					Label: Stat Modifier
+					Tooltip: ""
+				}
+			}
+
+			NPCBehaviorData: {
+				Tooltip: ""
+
+				DoNotDespawn: {
+					Label: NPCs marked will not despawn
+					Tooltip: ""
+				}
+
+				IsBullet: {
+					Label: Is this NPC used as a bullet
+					Tooltip: Used for hit prioritization and despawning decisions, and will not count on Border System
+				}
+
+				DoNotCountBorder: {
+					Label: This NPC don't count on Border System
+					Tooltip: When selected, this NPC will escape from the world to avoid some error
+				}
+
+				CustomEventType: {
+					Label: Custom Event
+					Tooltip: ""
+				}
+
+				CustomBiomeType: {
+					Label: Custom Biome
+					Tooltip: ""
+				}
+			}
+
+			EventType: {
+				Tooltip: ""
+				None.Label: None
+				Day.Label: Day
+				Night.Label: Night
+				Rain.Label: Raining/Snowing
+				SandStorm.Label: Sandstorm
+				BloodMoon.Label: Blood Moon
+				Eclipse.Label: Eclipse
+				Invasion.Label: Vanilla Invasion
+			}
+
+			BiomeType: {
+				Tooltip: ""
+				None.Label: None
+				Beach.Label: Ocean
+				Caverns.Label: Cavern
+				Corrupt.Label: Corruption
+				Crimson.Label: Crimson
+				Desert.Label: Desert
+				Dungeon.Label: Dungeon
+				Snow.Label: Snow
+				Glowshroom.Label: Glow Mushroom
+				Hallow.Label: Hallow
+				Hell.Label: Hell
+				Jungle.Label: Jungle
+				LihzhardTemple.Label: Lihzhard Temple
+				Overworld.Label: Overworld
+				Space.Label: Space
+				UndergroundDesert.Label: Underground Desert
+			}
+
+			NPCStatData: {
+				DefenseModifier: {
+					Tooltip: ""
+					Label: Defense Modifier
+				}
+
+				LifeModifier: {
+					Tooltip: ""
+					Label: Life Modifier
+				}
+
+				DamageModifier: {
+					Tooltip: ""
+					Label: Damage Modifier
+				}
+
+				Tooltip: ""
+			}
+
+			SubConfigForStat: {
+				Tooltip: ""
+
+				SpecialDataNPC: {
+					Label: Modify NPC stats
+					Tooltip: ""
+				}
+
+				SpecialDataProj: {
+					Label: Modify projectile stats
+					Tooltip: ""
+				}
+			}
+
+			ProjStatData: {
+				Tooltip: ""
+
+				DamageModifier: {
+					Label: Damage Modifier
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}

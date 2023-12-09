@@ -1,0 +1,289 @@
+Mods: {
+	BattleRoyaleMod: {
+		Items: {
+			TechniLens: {
+				DisplayName: 义眼丁真
+				Tooltip:
+					'''
+					携带时显示蛐蛐队伍状态
+					设为收藏时启用蛐蛐队伍标记
+					'''
+			}
+
+			Starter: {
+				DisplayName: 斗蛐蛐状态切换
+				Tooltip:
+					'''
+					开始或停止斗蛐蛐
+					别忘了一个巴掌拍不响
+					'''
+			}
+
+			Marker: {
+				DisplayName: 标记蛐蛐
+				Tooltip:
+					'''
+					左键框选标记蛐蛐
+					右键切换队伍
+					无法标记友善NPC
+					[c/ff0000:收藏后可以强制标记任何NPC，小心使用]
+					'''
+			}
+
+			ClearMark: {
+				DisplayName: 清除标记
+				Tooltip:
+					'''
+					左键框选清除蛐蛐标记
+					右键清除所有蛐蛐标记
+					'''
+			}
+
+			Watcher: {
+				DisplayName: 吃瓜.png
+				Tooltip:
+					'''
+					左键选中NPC切换视角
+					右键脱离
+					'''
+			}
+
+			Execute: {
+				DisplayName: 抹杀蛐蛐
+				Tooltip:
+					'''
+					左键对蛐蛐造成其血量上限33%的伤害
+					右键抹杀蛐蛐
+					'''
+			}
+
+			ExecuteAll: {
+				DisplayName: 统统抹杀
+				Tooltip:
+					'''
+					左键清除所有蛐蛐
+					右键清除蛐蛐弹幕
+					'''
+			}
+
+			Teleporter: {
+				DisplayName: 传送蛐蛐
+				Tooltip:
+					'''
+					左键将指定队伍的蛐蛐传送到光标处
+					右键切换队伍
+					收藏后可以传送所有蛐蛐
+					'''
+			}
+
+			RagTime: {
+				DisplayName: 咋瓦鲁多
+				Tooltip:
+					'''
+					左键停止/恢复蛐蛐行动
+					右键可停止所有NPC和射弹行动
+					'''
+			}
+
+			ArenaRuler: {
+				DisplayName: 边界编辑器
+				Tooltip:
+					'''
+					在全局配置中启动边界系统后生效
+					设为收藏后可以看到边界线
+					左键修改边界位置
+					右键重置边界位置
+					[c/ff0000:边界过小可能会使蛐蛐行为异常，请谨慎使用]
+					'''
+			}
+		}
+
+		OpeningRemind: "[电子斗蛐蛐mod] 记得查看配置获取更多信息！"
+		AllMarksClear: 所有标记已被清除!
+		MarksClear: 标记已被清除!
+		Bonk: 砰!
+		InstKill: 已抹杀!
+		SwitchToTeam: 已切换至{0}号队
+		NoTeamAvailable: 当前无可用队伍
+		BattleStart: 斗蛐蛐开始！
+		BattleEnd: 斗蛐蛐结束！
+		BattleStatusOn: "[c/d66fd1:斗蛐蛐正在进行]"
+		BattleStatusOff: "[c/d66fd1:斗蛐蛐停止]"
+		JoinTheTeam: " 加入了{0}队!"
+		EnemyList: 斗蛐蛐状态:
+		Team: "[c/00ffff:{0}号队:]"
+		TeamDefeated: "{0}号队被击败了!"
+		TeamWin: "{0}号队最终获胜!"
+		ZaWarudo: 咋瓦鲁多!
+		ZaWarudoResume: 时间开始流动!
+		Projectiles.MultipleSelectProj.DisplayName: 多选
+		NormalHeader: 常规功能
+		WarningHeader: 注意: 以下高级功能不保证对所有NPC生效
+
+		Configs: {
+			CustomConfig: {
+				DisplayName: 全局配置
+
+				MeleeDamageModifier: {
+					Label: 蛐蛐近战伤害倍率
+					Tooltip: ""
+				}
+
+				ProjDamageModifier: {
+					Label: 蛐蛐射弹伤害倍率
+					Tooltip: ""
+				}
+
+				AllSegmentUseSameImmune: {
+					Label: 蛐蛐所有体节共享无敌帧
+					Tooltip: 蠕虫拯救者
+				}
+
+				SourceNPCAggro: {
+					Label: 主目标额外仇恨
+					Tooltip:
+						'''
+						使蛐蛐更容易攻击主要目标，比如骷髅王的头部
+						每单位仇恨等效为一像素距离
+						'''
+				}
+
+				EnableProjShow: {
+					Label: 启用射弹队伍显示
+					Tooltip: ""
+				}
+
+				UseBorderSystem: {
+					Label: 使用边界系统
+					Tooltip:
+						'''
+						可以防止蛐蛐脱离世界
+						谨慎使用
+						'''
+				}
+
+				TakeEffectInstantly: {
+					Label: 更改立刻生效
+					Tooltip:
+						'''
+						以下更改将在 NPC 生成后立刻生效
+						无需先进行标记
+						'''
+				}
+
+				SpecialBehavior: {
+					Label: 特殊行为模拟
+					Tooltip: ""
+				}
+
+				subConfigForStat: {
+					Label: 数据修改
+					Tooltip: ""
+				}
+			}
+
+			NPCBehaviorData: {
+				Tooltip: ""
+
+				DoNotDespawn: {
+					Label: 被标记的生物不会脱战
+					Tooltip: ""
+				}
+
+				IsBullet: {
+					Label: 该生物是否被用作子弹
+					Tooltip: 用于伤害优先级判定和脱战判定,同时不参与边界判定
+				}
+
+				DoNotCountBorder: {
+					Label: 该生物不参与边界系统判定
+					Tooltip: 选择后该生物可以脱离世界以避免错误
+				}
+
+				CustomEventType: {
+					Label: 自意义事件
+					Tooltip: ""
+				}
+
+				CustomBiomeType: {
+					Label: 自意义群系
+					Tooltip: ""
+				}
+			}
+
+			EventType: {
+				Tooltip: ""
+				None.Label: 无
+				Day.Label: 白天
+				Night.Label: 夜晚
+				Rain.Label: 雨/雪天
+				SandStorm.Label: 沙尘暴
+				BloodMoon.Label: 血月
+				Eclipse.Label: 日食
+				Invasion.Label: 原版入侵事件
+			}
+
+			BiomeType: {
+				Tooltip: ""
+				None.Label: 无
+				Beach.Label: 海洋
+				Caverns.Label: 洞穴层
+				Corrupt.Label: 腐化之地
+				Crimson.Label: 血腥之地
+				Desert.Label: 沙漠
+				Dungeon.Label: 地牢
+				Snow.Label: 雪地
+				Glowshroom.Label: 发光蘑菇地
+				Hallow.Label: 神圣之地
+				Hell.Label: 地狱
+				Jungle.Label: 丛林
+				LihzhardTemple.Label: 丛林神庙
+				Overworld.Label: 地表层
+				Space.Label: 太空层
+				UndergroundDesert.Label: 地下沙漠
+			}
+
+			NPCStatData: {
+				DefenseModifier: {
+					Tooltip: ""
+					Label: 防御系数调整
+				}
+
+				LifeModifier: {
+					Tooltip: ""
+					Label: 生命系数调整
+				}
+
+				DamageModifier: {
+					Tooltip: ""
+					Label: 伤害系数调整
+				}
+
+				Tooltip: ""
+			}
+
+			SubConfigForStat: {
+				Tooltip: ""
+
+				SpecialDataNPC: {
+					Label: NPC数据调整
+					Tooltip: ""
+				}
+
+				SpecialDataProj: {
+					Label: 射弹数据调整
+					Tooltip: ""
+				}
+			}
+
+			ProjStatData: {
+				Tooltip: ""
+
+				DamageModifier: {
+					Label: 伤害系数调整
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}
